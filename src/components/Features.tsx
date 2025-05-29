@@ -34,8 +34,8 @@ export default function Features() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                    Create your own workout sets. Keep track of your workouts and
+                    learn the techniques through visualization.
                   </p>
                   <a className="mt-3 text-black inline-flex items-center hover:text-gray-500">
                     Learn More
@@ -77,8 +77,8 @@ export default function Features() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                    Calculate your calory intake. Determine if you are getting the right 
+                    amount of calories based on your desired outcome.
                   </p>
                   <a className="mt-3 text-black inline-flex items-center hover:text-gray-500">
                     Learn More
@@ -121,8 +121,8 @@ export default function Features() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Blue bottle crucifix vinyl post-ironic four dollar toast
-                    vegan taxidermy. Gastropub indxgo juice poutine.
+                    Point-based Leaderboard system that allows for competition. Be warned, 
+                    this is not for the feint hearted!
                   </p>
                   <a className="mt-3 text-black hover:text-gray-500 inline-flex items-center">
                     Learn More

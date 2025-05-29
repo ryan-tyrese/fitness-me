@@ -9,12 +9,10 @@ export default function SignUp() {
         <div className="container px-5 py-10 pb-20 mx-auto flex flex-col items-center text-center">
           <div className="flex flex-col">
             <h1 className="title-font font-medium text-3xl text-black">
-              Slow-carb next level shoindcgoitch ethical authentic, poko
-              scenester
+              What are you waiting for?
             </h1>
             <p className="mt-4">
-              Poke slow-carb mixtape knausgaard, typewriter street art gentrify
-              hammock starladder roathse. Craies vegan tousled etsy austin.
+              Sign-up now to get a range of options for your fitness journey.
             </p>
           </div>
           <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col w-full mt-10 md:mt-20">
@@ -52,7 +50,7 @@ export default function SignUp() {
               </span>
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Literally you probably haven't heard of them jean shorts.
+              "It always seems impossible until it's done" - Nelson Mandela
             </p>
           </div>
         </div>
