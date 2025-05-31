@@ -12,7 +12,7 @@ export default function SignUp() {
               What are you waiting for?
             </h1>
             <p className="mt-4">
-              Sign-up now to get a range of options for your fitness journey.
+              Sign Up now to access a range of options for your fitness journey.
             </p>
           </div>
           <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col w-full mt-10 md:mt-20">
