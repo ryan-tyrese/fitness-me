@@ -1,14 +1,15 @@
 import './App.css'
-import Features from './components/Features.tsx'
-import Hero from './components/Hero.tsx'
-import SignUp from './components/SignUp.tsx'
+import Home from './routes/Home.tsx'
+import { Routes, Route } from 'react-router'
+import Exercises from './routes/Exercises.tsx'
 
 function App() {
   return (
     <>
-      <Hero />
-      <Features />
-      <SignUp />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/exercises" element={<Exercises />} />
+      </Routes>
     </>
   )
 }
