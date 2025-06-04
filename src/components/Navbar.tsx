@@ -7,7 +7,7 @@ export default function Navbar(){
 
     return(
         <>
-            <header className="bg-white flex items-center justify-between py-4 px-6 lg:px-14 text-black drop-shadow-md">
+            <nav className="bg-white flex items-center justify-between py-4 px-6 lg:px-14 text-black drop-shadow-md sticky top-0">
                 {/*Logo*/}
                 <Link to='/'>
                     <span className="text-2xl font-bold lg:text-3xl">Fit</span>
@@ -46,7 +46,7 @@ export default function Navbar(){
                         <li className="list-none text-shadow-lg/30 text-shadow-gray-700 w-full text-center p-4 transition-all cursor-pointer">Log In</li>
                     </Link>
                 </div>
-            </header>  
+            </nav>  
         </>
     )
 }
