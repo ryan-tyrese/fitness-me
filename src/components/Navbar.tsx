@@ -18,12 +18,14 @@ export default function Navbar(){
                         <li className="p-2 hover:text-gray-500 transition-all cursor-pointer">Exercises</li>
                     </Link>
                     
-                    <Link to="/create">
-                        <li className="p-2 hover:text-gray-500 transition-all cursor-pointer">Create</li>
-                    </Link>
-                    
                     <Link to="/about">
-                        <li className="p-2 hover:text-gray-500 transition-all cursor-pointer">About</li>
+                        <li className="p-2 hover:text-gray-500 transition-all cursor-pointer">About Us</li>
+                    </Link>
+
+                    <Link to="/login">
+                        <button className="border-1 border-gray-300 rounded-md hover:border-gray-500 hover:bg-gray-100">
+                            <li className="p-2 transition-all cursor-pointer border-0 outline-gray-200">Log In</li>
+                        </button>
                     </Link>
                 </ul>
                 {/*Menu*/}
@@ -36,12 +38,12 @@ export default function Navbar(){
                         <li className="list-none w-full text-center p-4 hover:text-gray-500 transition-all cursor-pointer">Exercises</li>
                     </Link>
                     
-                    <Link to="/create">
-                        <li className="list-none w-full text-center p-4 hover:text-gray-500 transition-all cursor-pointer">Create</li>
-                    </Link>
-                    
                     <Link to="/about">
-                        <li className="list-none w-full text-center p-4 hover:text-gray-500 transition-all cursor-pointer">About</li>
+                        <li className="list-none w-full text-center p-4 hover:text-gray-500 transition-all cursor-pointer">About Us</li>
+                    </Link>
+
+                    <Link to="/login">
+                        <li className="list-none text-shadow-lg/30 text-shadow-gray-700 w-full text-center p-4 transition-all cursor-pointer">Log In</li>
                     </Link>
                 </div>
             </header>  

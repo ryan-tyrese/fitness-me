@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-white flex flex-col items-center mt-auto">
+      <footer className="bg-white flex flex-col items-center mt-auto drop-shadow-md">
         <div className="text-gray-500 text-center w-full p-10">
           <h1 className="text-2xl font-bold lg:text-3xl text-black text-center">
             Fit
