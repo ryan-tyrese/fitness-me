@@ -1,5 +1,6 @@
 import smImage from "../assets/epuipment2.jpg"
 import lgImage from "../assets/equipment1.jpg"
+import ExerciseCard from "../components/ExerciseCard";
 
 export default function Exercises() {
   return (
@@ -26,10 +27,10 @@ export default function Exercises() {
             <div className="flex w-full justify-center items-end">
               <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
                 <input
+                  placeholder="Search for Exercises"
                   type="text"
-                  id="hero-field"
-                  name="hero-field"
                   className="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-gray-200 focus:bg-white border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  onChange={(e) => {}}
                 />
               </div>
               <button className="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg">
@@ -40,6 +41,7 @@ export default function Exercises() {
               “Technique is communication: the two words are synonymous in conductors.” - Leonard Bernstein
             </p>
           </div>
+          <ExerciseCard />
         </div>
       </section>
     </>
