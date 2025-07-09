@@ -27,7 +27,7 @@ export default function LogIn() {
                     alt="Google Logo"
                     className="h-8 w-7 mr-2 lg:mr-4"
                   />
-                  Sign In: Google
+                  Log In: Google
                 </span>
               </button>
               <button className="text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg w-9/10 h-8/10 md:w-8/10 md:h-5/10">
@@ -37,7 +37,7 @@ export default function LogIn() {
                     alt="Google Logo"
                     className="h-8 w-7 mr-2 lg:mr-4"
                   />
-                  Sign In: Apple
+                  Log In: Apple
                 </span>
               </button>
               <p className="text-white m-7 font-bold md:text-lg">

@@ -1,8 +1,29 @@
-import smImage from "../assets/epuipment2.jpg"
-import lgImage from "../assets/equipment1.jpg"
+import { useState } from "react";
+
+import smImage from "../assets/epuipment2.jpg";
+import lgImage from "../assets/equipment1.jpg";
 import ExerciseCard from "../components/ExerciseCard";
 
+import { FetchData, exerciseOptions } from "../utils/FetchData";
+
 export default function Exercises() {
+  const [search, setSearch] = useState("");
+  const [exercises, setExercises] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const HandleSearch = async () => {
+    if (search) {
+      setIsVisible(!isVisible);
+
+      const exercisesData = await FetchData(
+        'https://exercisedb.p.rapidapi.com/exercises',
+        exerciseOptions
+      );
+
+      console.log(exercisesData)
+    }
+  };
+
   return (
     <>
       <section className="text-gray-600 body-font">
@@ -30,18 +51,25 @@ export default function Exercises() {
                   placeholder="Search for Exercises"
                   type="text"
                   className="w-full bg-gray-100 bg-opacity-50 rounded focus:ring-2 focus:ring-gray-200 focus:bg-white border border-gray-300 focus:border-gray-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  onChange={(e) => {}}
+                  onChange={(e) => setSearch(e.target.value.toLowerCase())}
+                  value={search}
                 />
               </div>
-              <button className="inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg">
+              <button
+                className="search-btn inline-flex text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 rounded text-lg"
+                onClick={HandleSearch}
+              >
                 Search
               </button>
             </div>
             <p className="text-sm mt-2 text-gray-600 mb-8 w-full">
-              “Technique is communication: the two words are synonymous in conductors.” - Leonard Bernstein
+              “Technique is communication: the two words are synonymous in
+              conductors.” - Leonard Bernstein
             </p>
           </div>
-          <ExerciseCard />
+          {isVisible && (
+            <ExerciseCard />
+          )}
         </div>
       </section>
     </>
